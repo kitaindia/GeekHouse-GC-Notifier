@@ -1,5 +1,5 @@
-require 'dotenv/tasks'
 # encoding: UTF-8
+require 'dotenv/tasks'
 desc "日本時間22時につぶやく用"
 task :cron22 => :environment do
   include ActionView::Helpers::TextHelper
