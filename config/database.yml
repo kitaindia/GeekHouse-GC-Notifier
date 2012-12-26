@@ -1,0 +1,29 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+#test: &test
+#  adapter: sqlite3
+#  database: db/test.sqlite3
+#  pool: 5
+#  timeout: 5000
+
+#cucumber:
+#  <<: *test
+production:
+  adapter: mysql2
+  encoding: utf8
+  username: sqale_573eb29784
+  password: a2e937b6792a74e1c0b74e27f3170b07d8aca74a43f0e49b
+  database: sqale_573eb29784
+  host: mysql001.sqale.jp
