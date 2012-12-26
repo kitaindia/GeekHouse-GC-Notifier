@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.9'
 group :production do
-  gem 'pg'
+  gem 'mysql2'
 end
 
 group :assets do
@@ -31,8 +31,6 @@ gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "i18n_generators", "~> 1.2.1"
-gem 'heroku'
 gem "cocoon"
-gem 'unicorn'
-gem 'foreman'
 gem "twitter"
+gem 'dotenv'

@@ -1,3 +1,4 @@
+require 'dotenv/tasks'
 # encoding: UTF-8
 desc "日本時間22時につぶやく用"
 task :cron22 => :environment do
