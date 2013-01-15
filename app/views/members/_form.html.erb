@@ -1,14 +1,14 @@
 <%= simple_form_for @user, url: user_path(@user), method: "PUT" do |f| %>
   <h3>Member</h3>
-    <div id='members'>
-      <% 5.times do %>
-        <%= f.simple_fields_for :members, Member.new do |member| %>
-          <%= render 'member_fields', :f => member %>
-        <% end %>
+  <div id='members'>
+    <% 5.times do %>
+      <%= f.simple_fields_for :members, Member.new do |member| %>
+        <%= render 'member_fields', :f => member %>
       <% end %>
-      <div class='links'>
-        <%= link_to_add_association '追加', f, :members %>
-      </div>
+    <% end %>
+    <div class='links'>
+      <%= link_to_add_association '追加', f, :members %>
     </div>
-    <%= f.submit '保存' %>
+  </div>
+  <%= f.submit '保存' %>
 <% end %>
