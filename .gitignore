@@ -70,3 +70,4 @@ pickle-email-*.html
 
 # Textmate project files
 /*.tmproj
+.env
